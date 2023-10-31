@@ -6,7 +6,6 @@ function App() {
   let [lista, setLista] = useState([]);
   let [Item, setItem] = useState('');
 
-  // Carregar tarefas do servidor assim que o componente é montado
   function listarTarefas() {
     axios.get('http://localhost:3030/api/tarefas')
       .then(response => {
